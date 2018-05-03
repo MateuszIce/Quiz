@@ -1,0 +1,28 @@
+{
+    "q":[
+        {
+            "que":"Jak nazywa się fioletowa krowa?",
+            "ans1":"Mućka",
+            "ans2":"Mika",
+            "ans3":"Milka",
+            "ans4":"Mila",
+            "ansok":"Milka"
+        },
+        {
+            "que":"Jak ma na imię tata muminka?",
+            "ans1":"MuminPapa",
+            "ans2":"Tata Muminka",
+            "ans3":"Mumin",
+            "ans4":"Migotek",
+            "ansok":"Tata Muminka"
+        },
+        {
+            "que":"Ile to jest ln z e?",
+            "ans1":"0",
+            "ans2":"1",
+            "ans3":"e",
+            "ans4":"ln",
+            "ansok":"1"
+        }
+    ]
+}
