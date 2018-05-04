@@ -47,7 +47,10 @@ main {
     transition: all .3s ease-in-out;
 }
 
-.ans:hover {
+.ans-1:hover,
+.ans-2:hover,
+.ans-3:hover,
+.ans-4:hover{
     cursor: pointer;
     background: #fff;
     color: #47484b;
