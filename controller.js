@@ -1,8 +1,11 @@
 $(document).ready(function() {
-    
 
-let i=0;//random number - it will be function later
-
+//reload page after answer
+function reload(){
+    setInterval(function(){
+        location.reload();
+    }, 3000);
+}
 
 
 //lock to click and hover after answer    
@@ -14,20 +17,29 @@ function lock(){
 function is_ok(x){
     $(x).css('background-color', 'green');
     lock();
+    reload();
 }; 
 //if answer is wrong
 function not_ok(x){
     $(x).css('background-color', 'red');
     lock();
+    reload();
 };     
     
     //dataFill - load question and answers into \
      $.getJSON("questions.json", function(data){ 
+    
+     let min = 0;
+     let max = (data.q.length)-1;
+     let i = Math.floor(Math.random() * (max - min + 1)) + min;
+     
      $('.question').text(data.q[i].que);
+    //add randomizing answers!
      $('.ans-1').text(data.q[i].ans1);
      $('.ans-2').text(data.q[i].ans2);
      $('.ans-3').text(data.q[i].ans3);
      $('.ans-4').text(data.q[i].ans4);
+         
      $ok_ans = data.q[i].ansok;            
         });
     
